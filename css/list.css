@@ -15,7 +15,6 @@ img {
   grid-template-columns: 1fr 1fr;
   display: grid;
   gap: 20px;
-  padding: 20px;
 }
 
 @media (min-width: 900px) {
