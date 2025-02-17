@@ -100,9 +100,4 @@ li {
     /* centre grid */
     margin: 0 auto;
   }
-
-  .grid_1-3 p {
-    /* align text to left in the grid cell */
-    /* idk... */
-  }
 }
