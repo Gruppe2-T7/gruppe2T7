@@ -46,6 +46,12 @@ ul {
 li {
   /* set spacing between each li*/
   padding: 0.5rem 0;
+  font-family: "Bellota Text", serif;
+  font-weight: 100;
+}
+
+h3 {
+  padding-bottom: 1rem;
 }
 
 .ingredients {
