@@ -20,6 +20,5 @@ img {
 @media (min-width: 900px) {
   .grid_1-1-1 {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 70px;
   }
 }
