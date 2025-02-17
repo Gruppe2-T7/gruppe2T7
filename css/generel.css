@@ -2,12 +2,22 @@ body {
   background-color: #e7e6e1;
 }
 
+h1 {
+  font-family: "Kurale", serif;
+  font-weight: 100;
+}
+
 h2 {
   font-family: "Kurale", serif;
   font-weight: 100;
 }
 
 h3 {
+  font-family: "Kurale", serif;
+  font-weight: 100;
+}
+
+p {
   font-family: "Kurale", serif;
   font-weight: 100;
 }
