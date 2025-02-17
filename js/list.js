@@ -1,5 +1,5 @@
 const list_view = document.querySelector(".grid_1-1-1");
-const category = new URLSearchParams(window.location.search).get("category");
+const list = new URLSearchParams(window.location.search).get("list");
 
 const overskrift = document.querySelector("h1");
 
