@@ -1,6 +1,8 @@
 const categoryType = new URLSearchParams(window.location.search).get("category");
 const categoryContainer = document.querySelector(".grid_1-1-1-1");
 
+// test
+
 fetch("https://dummyjson.com/recipes")
   .then((response) => response.json())
   .then((data) => {
