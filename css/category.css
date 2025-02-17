@@ -21,6 +21,7 @@ main {
 
 .img-1 {
   width: 100%;
+  height: auto;
   margin-bottom: 1rem;
 }
 
@@ -71,5 +72,10 @@ main {
 
   .link-1 a {
     text-align: center;
+  }
+
+  .img-1 {
+    width: 100%;
+    height: auto;
   }
 }
