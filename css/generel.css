@@ -1,0 +1,163 @@
+body {
+  background-color: #e7e6e1;
+}
+
+h2 {
+  font-family: "Kurale", serif;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: "Kurale", serif;
+  font-weight: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Centrerer logoet på linje med resten af indholdet i headeren */
+  width: 90px;
+}
+
+header {
+  display: flex; /* Gør header til en fleksibel container */
+  justify-content: space-between; /* Fordeler elementer med lige meget plads imellem */
+  padding: 10px 0 0 10px;
+}
+
+.menu {
+  display: flex; /* Gør menuen horisontal */
+  list-style: none; /* Fjerner punkttegn fra listeelementer */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block; /* Gør links til blokke for et bedre klikområde */
+  margin: 5px 60px 0 0;
+  text-decoration: underline; /* Fjerner understregning fra links */
+  color: black; /* Sæt tekstfarve */
+  font-family: "Kurale", serif;
+  font-size: 25px;
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Ændrer farve ved hover for bedre brugervenlighed- og oplevelse */
+}
+
+.burger {
+  width: 30px; /* Bredden på burgerikonet */
+  height: 20px; /* Højden på burgerikonet */
+  cursor: pointer; /* Gør ikonet klikbart */
+  margin: 5px 10px 0;
+}
+
+.burger .line {
+  width: 100%; /* Sikre at linjer fylder hele bredden */
+  height: 2px; /* Linjetykkelse */
+  background-color: black; /* Linjefarve */
+  margin-bottom: 5px; /* Afstanden mellem linjerne */
+  transition: 0.2s linear; /* Glidende overgang for animation */
+  border-radius: 10px; /* Rundede hjørner for et blødere udtryk */
+}
+
+.burger {
+  display: none; /* Gør burgermenu usynlig på desktop view */
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none; /* Gør menu usynlig på mobil view (skjuler den normale menu) */
+  }
+
+  .burger {
+    display: block; /* Gør burgermenu synlig på mobil view */
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px); /* Rotere første linje for at skabe et X */
+    transition: 0.2s linear; /* Glidende overgang for animationen */
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0; /* Skjuler midterlinjen */
+    transition: 0.15s linear; /* Hastigheden på overgangen fra linjer til X */
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px); /* Roterer tredje linje for at skabe et X */
+    transition: 0.2s linear; /* Glidende overgang for animationen */
+  }
+
+  nav.active .menu {
+    display: block; /* Gør menuen synlig, når der trykkes på burgerikonet */
+    position: absolute; /* Placerer menuen ovenover andet indhold (fx header og logo) */
+    top: 49px; /* Får menuen til at udfolde sig lige under headeren */
+    background-color: #e7e6e1;
+    right: 0;
+    left: 0;
+    width: 100%; /* Gør menuen fuldbredde */
+    z-index: 1; /* Gør menuen vises ovenover alt andet indhold */
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px; /* Tilføjer lidt luft mellem menu muligheder */
+  }
+
+  nav.active .menu a {
+    font-size: 24px; /* Skriftstørrelse for menuen */
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-bottom: 75px;
+  padding-top: 30px;
+}
+
+.footer-left {
+  display: grid;
+}
+
+.footer-right {
+  display: grid;
+}
+
+h4 {
+  color: white;
+  font-family: "Bellota Text", serif;
+  font-weight: 100;
+  padding: 10px 20px 10px 20px;
+}
+
+.footer_social_media {
+  display: flex; /* Sørger for at sociale medie-ikoner ligger på én linje */
+  justify-content: flex-end; /* Placerer ikonerne til højre */
+  align-items: center; /* Centrer lodret */
+  gap: 10px; /* Tilføjer mellemrum mellem ikonerne */
+  list-style: none; /* Fjerner prikker ud for */
+  padding: 0 20px 0 0;
+}
+
+.footer_social_media img {
+  width: 30px; /* Størrelse på ikonerne, ensartet størrelse */
+  height: auto; /* Bevarer proportioner */
+}
+
+.footer_social_media a:hover img {
+  transform: scale(1.1); /* Forstørre ikonet ved hover */
+  transition: transform 0.5s ease; /* Gør overgangen glidende */
+}
+
+.footer {
+  display: flex; /* Gør footeren fleksibel */
+  justify-content: space-between; /* Fordel pladsen mellem logo og sociale medier */
+  align-items: center; /* Rykker olsenstudio.www på linje med logo og sociale medie */
+}
+
+@media (min-width: 900px) {
+  footer {
+    padding: 30px 80px 75px 80px;
+  }
+}
