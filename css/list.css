@@ -13,7 +13,9 @@ img {
 
 h1 {
   text-align: center;
+  text-decoration: underline;
 }
+
 .grid_1-1-1 {
   grid-template-columns: 1fr 1fr;
   display: grid;
