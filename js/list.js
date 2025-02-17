@@ -11,7 +11,7 @@ function showList(recipes) {
   const markup = recipes
     .map(
       (recipe) =>
-        `<div class="grid_1-1-1">
+        `<div class="card">
           <a href="single.html?id=${recipe.id}">
             <img src="${recipe.image}" class="dish-img" alt="${recipe.name}" />
           </a>
