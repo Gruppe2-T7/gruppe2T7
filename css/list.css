@@ -1,0 +1,29 @@
+/************** Reset ********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+.grid_1-1-1 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 70px;
+  }
+}
