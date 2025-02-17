@@ -3,6 +3,7 @@ const list = new URLSearchParams(window.location.search).get("list");
 
 const overskrift = document.querySelector("h1");
 
+
 fetch(`https://dummyjson.com/recipes?limit=0`)
   .then((response) => response.json())
   .then((data) => showList(data.recipes));
