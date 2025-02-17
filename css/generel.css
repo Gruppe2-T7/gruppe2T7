@@ -5,11 +5,18 @@ body {
 h1 {
   font-family: "Kurale", serif;
   font-weight: 100;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-top: 5rem;
+  margin: 0 500px;
+  font-size: 50px;
 }
 
 h2 {
   font-family: "Kurale", serif;
   font-weight: 100;
+  font-size: 30px;
 }
 
 h3 {
