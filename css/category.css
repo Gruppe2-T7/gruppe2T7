@@ -9,20 +9,9 @@ img {
   display: block;
 }
 
-h1 {
-  display: inline-block; /* Sørger for, at stregen ikke strækker sig over hele linjen */
-  border-bottom: 1px solid black; /* Justér tykkelse og farve efter behov */
-  padding-bottom: 5px; /* Justér afstanden mellem tekst og streg */
-  margin-top: 5rem;
-  position: absolute;
-  left: 35%;
-  top: 10%;
-}
-
 h2 {
-  position: absolute;
-  left: 25%;
-  top: 30%;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 main {
@@ -32,33 +21,44 @@ main {
 
 .img-1 {
   width: 100%;
+  height: auto;
   margin-bottom: 1rem;
 }
 
 .link-1 a {
   text-decoration: none;
   color: black;
-  margin-left: 10rem;
-  font-size: 20px;
+  margin-left: 0rem;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Bellota Text", serif;
+  margin-left: 1rem;
 }
 
 .grid_1-1-1-1 {
   gap: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-bottom: 6rem;
 }
 
 @media (min-width: 900px) {
+  h1 {
+    text-align: center;
+    border-bottom: 1px solid black; /* Justér tykkelse og farve efter behov */
+    padding-bottom: 5px; /* Justér afstanden mellem tekst og streg */
+    margin-top: 3rem;
+  }
+
   .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 30rem;
+    margin-top: 15rem;
     margin-bottom: 6rem;
   }
 
-  h1 {
+  /* h1 {
     position: absolute;
     left: 45%;
     top: 10%;
@@ -68,9 +68,14 @@ main {
     position: absolute;
     left: 40%;
     top: 30%;
-  }
+  } */
 
   .link-1 a {
-    margin-left: 7rem;
+    text-align: center;
+  }
+
+  .img-1 {
+    width: 100%;
+    height: auto;
   }
 }
