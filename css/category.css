@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  display: inline-block; /* Sørger for, at stregen ikke strækker sig over hele linjen */
+  border-bottom: 1px solid black; /* Justér tykkelse og farve efter behov */
+  padding-bottom: 5px; /* Justér afstanden mellem tekst og streg */
+  margin-top: 5rem;
+  position: absolute;
+  left: 35%;
+  top: 10%;
+}
+
+h2 {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+}
+
+main {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.img-1 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.link-1 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10rem;
+  font-size: 20px;
+}
+
+.grid_1-1-1-1 {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20rem;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 900px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30rem;
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+  }
+
+  h2 {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+  }
+
+  .link-1 a {
+    margin-left: 7rem;
+  }
+}
