@@ -5,7 +5,7 @@ fetch(`https://dummyjson.com/recipes`)
   .then((data) => showRecipes(data.recipes));
 
 function showRecipes(recipes) {
-  const markup = recipes.map((recipe) => `<a href="category.html?recipes=${recipe.cuisine}">${recipe.cuisine}</a>`).join("");
+  const markup = recipes.map((recipe) => `<a href="category.html?recipe=${recipe.id}">${recipe.name}</a>`).join("");
 
   console.log(markup);
   index_knap_container.innerHTML = markup;
