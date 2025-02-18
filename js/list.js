@@ -37,7 +37,7 @@ function visListe(data) {
     <img src="${opskrift.image}" alt="meal">
     </a>
     <h2>${opskrift.name}</h2>
-            <p>${opskrift.mealType}</p>
+            <p>${opskrift.difficulty}</p>
         </article>`
     )
     .join("");
