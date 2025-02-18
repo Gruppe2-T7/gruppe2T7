@@ -9,7 +9,7 @@ if (opskriftId) {
         <h1>${data.name}</h1>
         <img class="heroImage" src="${data.image}" alt="${data.name}" />
         <div class="grid_1-3">
-          <img src="assets/preptime.svg" alt="preptime ticon" />
+          <img src="assets/preptime.svg" alt="preptime icon" />
           <p>Prep time: ${data.prepTimeMinutes} min.</p>
           <img src="assets/cooktime.svg" alt="cooktime icon" />
           <p>Cook time: ${data.cookTimeMinutes} min.</p>
