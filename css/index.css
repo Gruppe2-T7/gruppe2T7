@@ -6,12 +6,19 @@
 }
 
 img {
-  width: 100%;
+  width: 1000%;
   height: auto;
 }
 
+.hero_section {
+  display: grid;
+  place-items: center;
+}
+
 .hero-image {
-  margin: 15px 0 0 0;
+  margin: 0 0 0 5rem;
+  width: 80%;
+  height: auto;
 }
 
 .index-knap-container {
@@ -29,6 +36,11 @@ img {
   text-decoration: none;
   padding: 5px 20px 5px 20px;
   margin: 40px 0 40px 0;
+}
+
+.index-knap:hover {
+  background-color: #6c8064;
+  color: white;
 }
 
 h2 {
