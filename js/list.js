@@ -1,5 +1,5 @@
 const list_view = document.querySelector(".grid_1-1-1");
-const h2 = document.querySelector("h2");
+const h1 = document.querySelector("#mealtype-header");
 const selectMealType = document.querySelector("#mealType");
 selectMealType.addEventListener("change", filterMealType);
 const url = "https://dummyjson.com/recipes?limit=0"; // limit=0 henter alle 50 opskrifter
@@ -32,10 +32,11 @@ function visListe(data) {
   const markup = data
     .map(
       (opskrift) => `        
-      <article>
+      <article class="recipe_card">
       <a href="single.html?id=${opskrift.id}">      
     <img src="${opskrift.image}" alt="meal">
     </a>
+   
     <h2>${opskrift.name}</h2>
             <p>${opskrift.difficulty}</p>
         </article>`
@@ -49,6 +50,7 @@ function filterMealType(event) {
   mealType = event.target.value;
   if (mealType == "All") {
     visListe(filteredData);
+    h1.textContent = "Recipes/ " + mealType + " (" + filteredData.length + ")";
   } else {
     // Her filtreres det allerede filtrerede data efter den valgte mealType
     const filteredMealtypeData = filteredData.filter((recipe) => recipe.mealType.includes(mealType));
@@ -56,7 +58,7 @@ function filterMealType(event) {
     visListe(filteredMealtypeData);
 
     // overskriften rettes så den viser, hvad der er valgt
-    h2.textContent = "Opskrifter / " + mealType + " (" + filteredMealtypeData.length + ")";
     // .length giver antallet af opskrifter på den aktuelle liste
+    h1.textContent = "Recipes/ " + mealType + " (" + filteredMealtypeData.length + ")";
   }
 }
