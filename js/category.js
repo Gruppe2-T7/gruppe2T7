@@ -4,9 +4,9 @@ const categoryContainer = document.querySelector(".grid_1-1-1-1");
 fetch(`https://dummyjson.com/recipes?sortBy=dinner&or`)
   .then((response) => response.json())
   .then((data) => {
-    const filteredRecipes = data.recipes.filter((recipe) => recipe.mealType.includes(categoryType));
+    const filterRecipes = data.recipes.filter((recipe) => recipe.mealType.includes(categoryType));
 
-    categoryContainer.innerHTML = filteredRecipes
+    categoryContainer.innerHTML = filterRecipes
       .map(
         (recipe) => `
         <div class="category-img-1">
