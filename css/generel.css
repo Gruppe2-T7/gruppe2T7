@@ -39,6 +39,11 @@ header {
   display: flex; /* Gør header til en fleksibel container */
   justify-content: space-between; /* Fordeler elementer med lige meget plads imellem */
   padding: 10px 0 0 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #e7e6e1;
+  padding-bottom: 25px;
 }
 
 .menu {
