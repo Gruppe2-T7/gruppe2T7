@@ -33,7 +33,7 @@ p {
 .logo {
   display: flex;
   align-items: center; /* Centrerer logoet på linje med resten af indholdet i headeren */
-  width: 90px;
+  width: 80%;
 }
 
 header {
@@ -61,10 +61,12 @@ header {
   color: black; /* Sæt tekstfarve */
   font-family: "Kurale", serif;
   font-size: 25px;
+  transition: transform 0.3s ease; /* Glidende overgang for forstørrelsen */
 }
 
 .menu a:hover {
   text-decoration: underline; /* Ændrer farve ved hover for bedre brugervenlighed- og oplevelse */
+  transform: scale(1.1); /* Forstørrer elementet med 10% */
 }
 
 .burger {
@@ -129,6 +131,21 @@ header {
   nav.active .menu a {
     font-size: 24px; /* Skriftstørrelse for menuen */
   }
+
+  .menu a {
+    display: block; /* Gør links til blokke for et bedre klikområde */
+    margin: 5px 60px 0 0;
+    text-decoration: underline; /* Fjerner understregning fra links */
+    color: black; /* Sæt tekstfarve */
+    font-family: "Kurale", serif;
+    font-size: 25px;
+    transition: transform 0.3s ease; /* Glidende overgang for forstørrelsen */
+  }
+
+  .menu a:hover {
+    text-decoration: underline; /* Ændrer farve ved hover for bedre brugervenlighed- og oplevelse */
+    transform: scale(1); /* Forstørrer elementet med 10% */
+  }
 }
 
 footer {
@@ -160,7 +177,7 @@ h4 {
   align-items: center; /* Centrer lodret */
   gap: 10px; /* Tilføjer mellemrum mellem ikonerne */
   list-style: none; /* Fjerner prikker ud for */
-  padding: 0 20px 0 0;
+  padding: 10px 20px 10px 20px;
 }
 
 .footer_social_media img {
