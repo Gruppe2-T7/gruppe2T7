@@ -5,6 +5,9 @@ if (opskriftId) {
   fetch(`https://dummyjson.com/recipes/${opskriftId}`)
     .then((response) => response.json())
     .then((data) => {
+      // update tiltle in tab
+      document.title = data.name;
+      // update whole page
       product_view.innerHTML = `
         <h1>${data.name}</h1>
         <img class="heroImage" src="${data.image}" alt="${data.name}" />
@@ -19,14 +22,14 @@ if (opskriftId) {
             <h3>Ingredients:</h3>
             <ul>
               ${data.ingredients
-                .map((ingredient) => `<li>${ingredient}</li>`)
+                .map((ingredient) => `<li>${ingredient}</li>`) //convert array to String
                 .join("")}
             </ul>
           </div>
           <div class="instructions">
             <h3>Instructions:</h3>
             <ol>
-              ${data.instructions.map((step) => `<li>${step}</li>`).join("")}
+              ${data.instructions.map((step) => `<li>${step}</li>`).join("")} 
             </ol>
           </div>
         </div>
