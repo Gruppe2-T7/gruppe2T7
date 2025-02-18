@@ -1,8 +1,8 @@
-const productId = new URLSearchParams(window.location.search).get("id");
+const opskriftId = new URLSearchParams(window.location.search).get("id");
 let product_view = document.querySelector(".product_view");
 
-if (productId) {
-  fetch(`https://dummyjson.com/recipes/${productId}`)
+if (opskriftId) {
+  fetch(`https://dummyjson.com/recipes/${opskriftId}`)
     .then((response) => response.json())
     .then((data) => {
       product_view.innerHTML = `
@@ -28,6 +28,4 @@ if (productId) {
         </div>
       `;
     });
-} else {
-  product_view.innerHTML = markup;
 }
