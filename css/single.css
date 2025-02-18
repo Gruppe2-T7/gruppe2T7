@@ -12,13 +12,13 @@ img {
 
 /* MOBILE + TABLET FORMAT: */
 
-h1 {
-  /* center align and set maximum width in case of long titles */
+/* h1 {
+  center align and set maximum width in case of long titles
   text-align: center;
   margin: 0 auto;
   max-width: 80vw;
   padding-top: 4rem;
-}
+} */
 
 .heroImage {
   /* set max witdh in relation to screen width and center */
@@ -28,15 +28,15 @@ h1 {
 
 /* this grid is mobile/tablet only */
 @media (max-width: 799px) {
-  .grid_1-3 {
-    /* define grid */
+  /* .grid_1-3 {
+    define grid
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 50vw;
     gap: 2.5vw;
-    /* centre grid */
+    centre grid
     margin: 0 auto;
-  }
+  } */
 
   .preptime {
     grid-column: 2;
@@ -83,7 +83,7 @@ h3 {
 
 /* DESKTOP FORMAT: */
 @media (min-width: 800px) {
-  h1,
+  /* h1, */
   img,
   .grid_1-3,
   .grid_1-1 {
@@ -119,15 +119,15 @@ h3 {
   }
 
   /* the name doesn't really make sense - it's a 1-3-1-3 grid on desktop */
-  .grid_1-3 {
-    /* define grid */
+  /* .grid_1-3 {
+    define grid
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr;
     width: 50vw;
     gap: 2.5vw;
-    /* centre grid */
+    centre grid
     margin: 0 auto;
-  }
+  } */
 
   .preptime {
     grid-column: 2;
