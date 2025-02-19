@@ -20,7 +20,6 @@ function hentData() {
 }
 
 hentData();
-
 function buildSelects() {
   // Her dannes en anden select-liste med de mealTypes der findes i det hentede data på samme måde
   const uniqueMTypes = Array.from(new Set(allRecipes.map((recipe) => recipe.mealType[0])));

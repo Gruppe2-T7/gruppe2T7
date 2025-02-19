@@ -31,7 +31,7 @@ p {
 
 .logo {
   display: flex;
-  align-items: center; /* Centrerer logoet på linje med resten af indholdet i headeren */
+  align-items: center;
   width: 80%;
 }
 
