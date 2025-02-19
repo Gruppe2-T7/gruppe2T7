@@ -25,6 +25,7 @@ label {
   background-color: transparent;
   font-family: "Kurale", serif;
   font-size: 22px;
+  margin: 20px 20px 0 0;
 }
 
 select {
@@ -55,10 +56,22 @@ select {
   margin-bottom: 5rem;
 }
 
-/* Når skærmbredden er under 768px (typisk mobil), brug 2 kolonner */
+.list_icon {
+  width: 8%;
+  margin: 0 0 0 60px;
+}
+
+@media (min-width: 900px) {
+  .list_icon {
+    width: 8%;
+    margin-left: 60px;
+  }
+}
+
+/* Når skærmbredden er under 768px (typisk mobil) */
 @media (max-width: 768px) {
   .grid_1-1-1 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 /* @media (min-width: 900px) {

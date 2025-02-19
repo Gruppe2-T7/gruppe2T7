@@ -38,7 +38,8 @@ function visListe(data) {
     </a>
    
     <h2>${opskrift.name}</h2>
-            <p>${opskrift.difficulty}</p>
+     <img src="assets/difficulty.svg" alt="difficulty icon" class="list_icon" />
+            <p>Difficulty: ${opskrift.difficulty}</p>
         </article>`
     )
     .join("");
