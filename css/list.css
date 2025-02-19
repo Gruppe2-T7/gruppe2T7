@@ -11,14 +11,64 @@ img {
   padding: 0px;
 }
 
-.grid_1-1-1 {
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  gap: 20px;
+main {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-@media (min-width: 900px) {
+h1 {
+  text-align: center;
+}
+
+label {
+  appearance: none; /* Fjerner standard browser-styling */
+  background-color: transparent;
+  font-family: "Kurale", serif;
+  font-size: 22px;
+}
+
+select {
+  background-color: darkslategray;
+  color: white;
+  padding: 10px 20px; /* Indvendig padding */
+  font-size: 20px; /* Skaleret skrift */
+  font-family: "Kurale", serif;
+  cursor: pointer; /* Markør for interaktivitet */
+  outline: none; /* Fjerner blå kant ved klik */
+  width: auto; /* Tilpas bredde */
+  transition: all 0.3s ease; /* Blød overgang */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recipe_card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* Når skærmbredden er under 768px (typisk mobil), brug 2 kolonner */
+@media (max-width: 768px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* @media (min-width: 900px) {
   .grid_1-1-1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+
+  .recipe_card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+} */

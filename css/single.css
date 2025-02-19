@@ -29,25 +29,30 @@ img {
   width: 47vw;
   margin: 5vw auto;
 }
-.grid_1-3 {
-  display: grid;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 50vw;
-  gap: 2.5vw;
-  /* centre: grid; */
-  margin: 0 auto;
+
+.grid_1-3 img {
+  width: 1.5rem;
 }
+
+/* align items insde the .grid_1-3 */
+.grid_1-3 img {
+  justify-self: end;
+}
+.grid_1-3 p {
+  justify-self: start;
+}
+
 /* this grid is mobile/tablet only */
 @media (max-width: 799px) {
-  .preptime {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .cooktime {
-    grid-column: 2;
-    grid-row: 2;
+  /* grid name doesn't make sense ignore that...  */
+  .grid_1-3 {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50vw;
+    gap: 2.5vw;
+    /* centre: grid; */
+    margin: 0 auto;
   }
 }
 
@@ -120,22 +125,14 @@ h3 {
     padding: 2rem;
   }
 
-  /* the name doesn't really make sense - it's a 1-3-1-3 grid on desktop */
-  /* .grid_1-3 {
-    define grid
+  /* the name still doesn't really make sense... */
+  .grid_1-3 {
+    /* define grid */
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 3fr;
-    width: 50vw;
+    grid-template-columns: 1.5rem 8rem 1.5rem 9rem;
     gap: 2.5vw;
-    centre grid
+    /* centre grid */
+    width: 25.5rem;
     margin: 0 auto;
-  } */
-
-  .preptime {
-    grid-column: 2;
-  }
-
-  .cooktime {
-    grid-column: 4;
   }
 }
