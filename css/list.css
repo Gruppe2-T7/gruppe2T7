@@ -28,8 +28,13 @@ label {
   margin: 20px 20px 0 0;
 }
 
+select:hover {
+  background-color: #6c8064;
+  color: white;
+}
+
 select {
-  background-color: darkslategray;
+  background-color: #475b3f;
   color: white;
   padding: 10px 20px; /* Indvendig padding */
   font-size: 20px; /* Skaleret skrift */
@@ -40,6 +45,7 @@ select {
   transition: all 0.3s ease; /* Blød overgang */
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: none;
 }
 
 .recipe_card {
