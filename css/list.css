@@ -1,9 +1,9 @@
-/************** Reset ********************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -81,14 +81,3 @@ select {
     grid-template-columns: 1fr;
   }
 }
-/* @media (min-width: 900px) {
-  .grid_1-1-1 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .recipe_card {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-  }
-} */
