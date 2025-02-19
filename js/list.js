@@ -36,7 +36,6 @@ function visListe(data) {
       <a href="single.html?id=${opskrift.id}">      
     <img src="${opskrift.image}" alt="meal">
     </a>
-   
     <h2>${opskrift.name}</h2>
      <img src="assets/difficulty.svg" alt="difficulty icon" class="list_icon" />
             <p>Difficulty: ${opskrift.difficulty}</p>
