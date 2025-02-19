@@ -21,14 +21,6 @@ main {
 
 /* MOBILE + TABLET FORMAT: */
 
-/* h1 {
-  center align and set maximum width in case of long titles
-  text-align: center;
-  margin: 0 auto;
-  max-width: 80vw;
-  padding-top: 4rem;
-} */
-
 .heroImage {
   /* set max witdh in relation to screen width and center */
   width: 47vw;
