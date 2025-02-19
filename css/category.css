@@ -1,81 +1,56 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 h2 {
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
-main {
-  margin-right: 3rem;
-  margin-left: 3rem;
-}
-
-.img-1 {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.link-1 a {
-  text-decoration: none;
-  color: black;
-  margin-left: 0rem;
-  font-size: 22px;
-  text-align: center;
+label {
   font-family: "Bellota Text", serif;
-  margin-left: 1rem;
 }
 
-.grid_1-1-1-1 {
-  gap: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 10rem;
-  margin-bottom: 6rem;
-} */
+input {
+  margin: 20px 0 20px 0;
+}
 
-/* @media (min-width: 900px) {
-  h1 {
-    text-align: center;
-    border-bottom: 1px solid black; */
-/* padding-bottom: 5px;
-    /* margin-top: 3rem;
+button {
+  border: 2px solid #475b3f;
+  padding: 10px 10px 10px 10px;
+  background-color: #e7e6e1;
+  margin: 20px 0 70px 0;
+}
+
+button:hover {
+  background-color: #6c8064;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  margin: 20px 0 20px 0;
+}
+
+@media (min-width: 900px) {
+  form {
+    margin: 0 300px 0 300px;
   }
-
-  .grid_1-1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 15rem;
-    margin-bottom: 6rem;
-  } */
-
-/* h1 {
-    position: absolute;
-    left: 45%;
-    top: 10%;
-  }
-
-  h2 {
-    position: absolute;
-    left: 40%;
-    top: 30%;
-  } */
-/* 
-  .link-1 a {
-    text-align: center;
-  }
-
-  .img-1 {
-    width: 100%;
-    height: auto;
-  }
-} */
+}

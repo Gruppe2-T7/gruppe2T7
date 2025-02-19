@@ -1,11 +1,10 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/category.css" />
     <link rel="stylesheet" href="./css/generel.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet" />
@@ -22,7 +21,8 @@
         <nav>
           <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="category.html">Mealtypes</a></li>
+            <li><a href="list.html">Recipes</a></li>
+            <li><a href="category.html">Send</a></li>
           </ul>
           <div class="burger">
             <div class="line"></div>
@@ -32,38 +32,29 @@
         </nav>
       </header>
     <main>
-      <h1>Mealtypes</h1>
-      <h2>What are you looking for?</h2>
+      <h1>Send a recipe</h1>
+      <h2>Fill in the information about your recipe in the boxes below and submit the recipe</h2>
+      <form class="recipe_form">
+        <label for="recipe_name">Recipe name:</label>
+        <input type="text" id="recipe_name" name="recipe_name" minlength="2" maxlength="50">
+      
+        <label for="recipe_diff">Difficulty level:</label>
+        <input type="number" id="recipe_diff" name="recipe_diff" required min="1" step="1">
 
-      <div class="grid_1-1-1-1"> -->
-<!-- <div class="category-img-1">
-          <a href="list.html"> <img src="https://cdn.dummyjson.com/recipe-images/45.webp" class="img-1" alt="Pizza" /></a>
-          <div class="link-1">
-            <a href="#">Appetizer</a>
-          </div>
-        </div>
+        <label for="recipe_prep">Prep time (min):</label>
+        <input type="number" id="recipe_prep" name="recipe_prep" required min="1" step="1">
 
-        <div class="category-img-1">
-          <a href="list.html"> <img src="https://cdn.dummyjson.com/recipe-images/20.webp" class="img-1" alt="Butter chicken" /></a>
-          <div class="link-1">
-            <a href="#">Main Course</a>
-          </div>
-        </div>
+        <label for="recipe_cook">Cook time (min):</label>
+        <input type="number" id="recipe_cook" name="recipe_cook" required min="1" step="1">
 
-        <div class="category-img-1">
-          <a href="list.html"> <img src="https://cdn.dummyjson.com/recipe-images/3.webp" class="img-1" alt="chocolate chip cookies" /></a>
-          <div class="link-1">
-            <a href="#">Dessert</a>
-          </div>
-        </div>
-
-        <div class="category-img-1">
-          <a href="list.html"> <img src="https://cdn.dummyjson.com/recipe-images/30.webp" class="img-1" alt="Lemonade" /></a>
-          <div class="link-1">
-            <a href="#">Beverages</a>
-          </div>
-        </div> -->
-<!-- </div>
+        <label for="recipe_ingredients">Ingredients:</label>
+        <textarea id="recipe_ingredients" name="recipe_ingredients" required minlength="5"></textarea>
+              
+        <label for="recipe_instructions">Instructions:</label>
+        <textarea id="recipe_instructions" name="recipe_instructions" required minlength="5"></textarea>
+      
+        <button type="submit">Create recipe</button>
+      </form>
     </main>
     <footer>
         <div class="footer-left">
@@ -94,4 +85,4 @@
       <script src="./js/category.js"></script>
       <script src="./js/burgermenu.js"></script>
   </body>
-</html> -->
+</html>
