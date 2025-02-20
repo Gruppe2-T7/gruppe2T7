@@ -7,6 +7,7 @@ if (opskriftId) {
     .then((data) => {
       // update tiltle in tab
       document.title = data.name;
+
       // update whole page
       product_view.innerHTML = `
         <h1>${data.name}</h1>
