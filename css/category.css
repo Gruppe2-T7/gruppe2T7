@@ -38,6 +38,7 @@ button:hover {
 form {
   display: flex;
   flex-direction: column;
+  margin: 0 10%;
 }
 
 input {
@@ -51,6 +52,8 @@ textarea {
 
 @media (min-width: 900px) {
   form {
-    margin: 0 300px 0 300px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10%;
   }
 }
