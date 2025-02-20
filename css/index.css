@@ -49,14 +49,20 @@ h2 {
 
 h3 {
   font-size: 15px;
-  margin: 30px 40px 30px 40px;
+  margin: 30px 40px;
   line-height: 25px;
+}
+
+@media screen and (min-width: 600px), screen and (max-width: 899px) {
+  h3 {
+    margin: 30px 15%;
+  }
 }
 
 @media (min-width: 900px) {
   h3 {
     font-size: 20px;
-    margin: 30px 350px 30px 350px;
+    margin: 30px 20%;
   }
 
   h2 {
